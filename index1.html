@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bold Spacing Fix</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      font-size: 18px;
+      line-height: 1.5;
+    }
+
+    /* Default bold (no fix) */
+    .default b {
+      font-weight: bold;
+    }
+
+    /* Fixed bold (consistent spacing) */
+    .fixed b {
+      font-weight: bold;
+      letter-spacing: normal;
+      word-spacing: -1px; /* adjust if needed */
+    }
+  </style>
+</head>
+<body>
+  <p class="default">
+    This is a <b>bold</b> word in the default style.
+  </p>
+
+  <p class="fixed">
+    This is a <b>bold</b> word with adjusted spacing.
+  </p>
+</body>
+</html>
